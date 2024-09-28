@@ -10,8 +10,119 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     background-color: #2a2e35;
     color: white;
+    margin: 0px;
 }
 
+.nav ul{
+    list-style: none;
+    display: flex;
+    background-color:  #2a2e35;
+    padding: 0;
+    margin-right: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.nav li{
+    display: inline-block;
+    text-align: right;
+}
+  
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .nav a:hover {
+    background-color: #586b46;
+    color: black;
+  }
+  
+  .nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.logo{
+    /*position: absolute;*/
+    top: 0;
+    left: 20px;
+    bottom: 0;
+}
+
+.logo img{
+    width: 150px;
+    height: 50px;
+    border: 10px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 95px;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px;
+    }
+}
+
+/*info section*/
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2e35;
+    color: white;
+    padding: 40px;
+}
+
+.info-content h2{
+    font-size: 36px;
+    color: #ccc;
+    margin-left: 50px;
+}
+
+.info-content p{
+    font-size: 16px;
+    color:#ccc;
+    margin-left: 50px;
+}
+
+.join-btn{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    
+}
+.books-img{
+    background-color: #4a4a4a;
+    width: 3px;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
