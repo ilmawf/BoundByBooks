@@ -141,6 +141,7 @@ header{
 .info-grid{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .info-box{
@@ -148,8 +149,104 @@ header{
     height: 200px;
     border: 2px solid #007BFF;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    color: #333;
     border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+.info-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.info-box p{
+    font-size: 14px;
+    color:#333;
+    text-align: center;
+    font-style: italic;
+}
+
+/*Quote*/
+
+.quote p{
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+    font-family: italic;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #666;
+    margin-top: 100px;
+}
+/*cta Section*/
+.cta-section {
+    background-color: #4285f4; /* Blue background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners for the CTA container */
+    margin: 20px auto; /* Spacing around the CTA */
+    display: flex;
+    max-width: 800px;
+    justify-content: flex-start; /* Space between text and button */
+    align-items: center;
+}
+
+/* Flex container layout */
+.cta-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* CTA text stays on the left */
+.cta-text {
+    text-align: left;
+    margin-right: 50px;
+}
+
+.cta-text h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-left: 40px;
+}
+
+.cta-text p {
+    color: white;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+.cta-button {
+    margin-left: 20px; /* Pushes the button to the right */
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #4285f4; /* Change to blue on hover */
+}
+
+/*footer*/
+footer{
+    background-color: #2a2e35;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
